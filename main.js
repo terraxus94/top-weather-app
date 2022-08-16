@@ -177,7 +177,7 @@ function populateWeeklyForecastCards(forecast) {
     forecastCard.classList.add('weekday-forecast');
     forecastCard.innerHTML = `<p class="weekday-forecast-day-title">${currentDailyForecast[0]}</p>
             <img
-              src="/assets/weather/${weatherIcon}.png"
+              src="./assets/weather/${weatherIcon}.png"
               class="weather-icon"
             />
             <div class="secondary-weather-forecast">
@@ -215,7 +215,7 @@ function populateCurrentWeather(forecast) {
   currentForecastElement.innerHTML = `<p class="current-title">current weather</p>
         <div class="current-details-container">
           <img
-            src="/assets/weather/${weatherIcon}.png"
+            src="./assets/weather/${weatherIcon}.png"
             id="todays-forecast-icon"
           />
           <div class="current-details">

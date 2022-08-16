@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "SummerPixel";
-  src: url("/assets/font/SummerPixel22Regular.ttf");
+  src: url("./assets/font/SummerPixel22Regular.ttf");
 }
 
 * {

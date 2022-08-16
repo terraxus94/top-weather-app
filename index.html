@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>WeatherApp</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="location-input-container">
+        <form class="location-form">
+          <label for="location"></label>
+          <input
+            type="text"
+            placeholder="search location"
+            id="location-input-field"
+          />
+          <button type="submit" id="form-submit-button">
+            <img
+              alt="svgImg"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAyNCAyNCIKc3R5bGU9IiBmaWxsOiMxQTFBMUE7Ij4gICAgPHBhdGggZD0iTSA5IDIgQyA1LjE0NTg1MTQgMiAyIDUuMTQ1ODUxNCAyIDkgQyAyIDEyLjg1NDE0OSA1LjE0NTg1MTQgMTYgOSAxNiBDIDEwLjc0Nzk5OCAxNiAxMi4zNDUwMDkgMTUuMzQ4MDI0IDEzLjU3NDIxOSAxNC4yODEyNSBMIDE0IDE0LjcwNzAzMSBMIDE0IDE2IEwgMTkuNTg1OTM4IDIxLjU4NTkzOCBDIDIwLjEzNzkzNyAyMi4xMzc5MzcgMjEuMDMzOTM4IDIyLjEzNzkzOCAyMS41ODU5MzggMjEuNTg1OTM4IEMgMjIuMTM3OTM4IDIxLjAzMzkzOCAyMi4xMzc5MzggMjAuMTM3OTM4IDIxLjU4NTkzOCAxOS41ODU5MzggTCAxNiAxNCBMIDE0LjcwNzAzMSAxNCBMIDE0LjI4MTI1IDEzLjU3NDIxOSBDIDE1LjM0ODAyNCAxMi4zNDUwMDkgMTYgMTAuNzQ3OTk4IDE2IDkgQyAxNiA1LjE0NTg1MTQgMTIuODU0MTQ5IDIgOSAyIHogTSA5IDQgQyAxMS43NzMyNjggNCAxNCA2LjIyNjczMTYgMTQgOSBDIDE0IDExLjc3MzI2OCAxMS43NzMyNjggMTQgOSAxNCBDIDYuMjI2NzMxNiAxNCA0IDExLjc3MzI2OCA0IDkgQyA0IDYuMjI2NzMxNiA2LjIyNjczMTYgNCA5IDQgeiI+PC9wYXRoPjwvc3ZnPg=="
+              id="search-icon"
+            />
+          </button>
+        </form>
+      </div>
+      <div class="current-weather-container"></div>
+      <div class="week-forecast-container"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

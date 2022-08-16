@@ -52,7 +52,7 @@ async function getCurrentWeather(city) {
 async function getCityCoordinates(userInput) {
   const apiKey = '483131751bb051878db079cb43de989d';
   const response = await fetch(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${userInput}&limit=5&appid=${apiKey}`
+    `https://api.openweathermap.org/geo/1.0/direct?q=${userInput}&limit=5&appid=${apiKey}`
   );
   const cityCoordinates = await response.json();
 
@@ -65,7 +65,7 @@ async function getForecast(city) {
   const lon = city.lon;
 
   const response = await fetch(
-    `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
+    `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
   );
   const forecast = await response.json();
 
